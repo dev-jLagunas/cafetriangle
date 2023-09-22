@@ -1,0 +1,7 @@
+.poppins-font {
+  font-family: "Poppins";
+}
+
+img.framed {
+  box-shadow: -50px -50px 0 -40px var(red), 50px 50px 0 -40px var(red);
+}

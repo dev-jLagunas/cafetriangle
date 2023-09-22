@@ -1,0 +1,8 @@
+.poppins-font {
+  font-family: "Poppins";
+}
+
+.scaled-image {
+  transform: scale(2); /* Adjust the scaling factor as needed */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}

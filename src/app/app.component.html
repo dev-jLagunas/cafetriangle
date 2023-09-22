@@ -1,0 +1,15 @@
+<div>
+  <section>
+    <app-nav></app-nav>
+  </section>
+  <section>
+    <router-outlet></router-outlet>
+  </section>
+  <section><app-footer></app-footer></section>
+  <button
+    (click)="scrollToTop()"
+    class="fixed bottom-0 right-0 transform text-4xl p-2 rounded-full bg-red-500 text-white opacity-70 hover:py-10 ease-in-out duration-500"
+  >
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</div>

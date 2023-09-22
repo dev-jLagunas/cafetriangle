@@ -1,0 +1,40 @@
+<section>
+  <h2
+    class="text-2xl my-8 w-max mx-auto border-2 border-orange-400 p-4 rounded-full text-orange-400"
+  >
+    Our Menu
+  </h2>
+  <!-- <div class="btn-container">
+    <button type="button" class="" data-id="all">all</button>
+    <button type="button" class="" data-id="breakfast">breakfast</button>
+    <button type="button" class="" data-id="lunch">lunch</button>
+    <button type="button" class="" data-id="shakes">shakes</button>
+  </div> -->
+  <div
+    class="w-90vw mx-auto group md:grid md:grid-cols-2 md:gap-4 lg:grid-cols-3 xl:grid-cols-4"
+  >
+    <article
+      class="flex flex-col mb-8 relative hover:transform hover:p-4 bg-white hover:border-4 border-orange-400 hover:rounded-3xl transform duration-300"
+      *ngFor="let item of menuItems"
+    >
+      <img
+        src="{{ item.img }}"
+        alt=""
+        class="h-full w-full object-cover mx-auto rounded-3xl"
+      />
+      <div class="text-start text-gray-800">
+        <header
+          class="group-hover:border-x-2 group-hover:border-x-cyan-500 w-fit h-full group-hover:px-2 mt-1"
+        >
+          <h4 class="poppins-font text-base tracking-wider">
+            {{ item.title }}
+          </h4>
+          <h4 class="poppins-font text-sm">{{ item.price }}</h4>
+          <p class="poppins-font text-sm">
+            {{ item.description }}
+          </p>
+        </header>
+      </div>
+    </article>
+  </div>
+</section>
