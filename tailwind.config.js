@@ -22,6 +22,9 @@ module.exports = {
       height: {
         "90vh": "90vh",
       },
+      screens: {
+        xs: "430px",
+      },
     },
   },
   plugins: [],
