@@ -13,11 +13,13 @@ import { MenuHomeComponent } from './menu-home/menu-home.component';
 import { GalleryMainComponent } from './gallery-main/gallery-main.component';
 import { LandingComponent } from './landing/landing.component';
 import { MenuFullComponent } from './menu-full/menu-full.component';
+import { MenuDetailsComponent } from './menu-details/menu-details.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'gallery', component: GalleryMainComponent },
   { path: 'full_menu', component: MenuFullComponent },
+  { path: 'details/:id', component: MenuDetailsComponent },
 ];
 
 @NgModule({
@@ -33,6 +35,7 @@ const routes: Routes = [
     GalleryMainComponent,
     LandingComponent,
     MenuFullComponent,
+    MenuDetailsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(routes)],
   providers: [],

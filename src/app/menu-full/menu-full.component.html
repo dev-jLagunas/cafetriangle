@@ -55,11 +55,14 @@
           >
             {{ item.title }}
           </h4>
-          <h4
-            class="poppins-font text-sm bg-orange-400 text-white w-max px-4 py-1 mx-auto rounded-3xl"
+          <a [routerLink]="['/details', item.id]">
+            <h4
+              class="poppins-font text-base bg-orange-400 text-white w-max px-4 py-1 mx-auto rounded-3xl"
+            >
+              {{ item.price }}
+            </h4></a
           >
-            {{ item.price }}
-          </h4>
+
           <p class="poppins-font text-sm">
             {{ item.description }}
           </p>

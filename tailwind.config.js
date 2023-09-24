@@ -13,6 +13,7 @@ module.exports = {
     "src/app/gallery-main/gallery-main.component.html",
     "src/app/landing/landing.component.html",
     "src/app/menu-full/menu-full.component.html",
+    "src/app/menu-details/menu-details.component.ts",
   ],
   theme: {
     extend: {
